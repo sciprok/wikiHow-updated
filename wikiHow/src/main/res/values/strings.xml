@@ -7,5 +7,6 @@
     <string name="how_to">How to</string>
     <string name="loading_featured_dialog">Loading Featured articles…</string>
     <string name="wikihow_local_main_page">http://www.wikihow.com</string>
+    <string name="title_activity_show_page">Show Page</string>
 
 </resources>

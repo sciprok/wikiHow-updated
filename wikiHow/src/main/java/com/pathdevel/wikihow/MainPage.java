@@ -62,6 +62,11 @@ public class MainPage extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        return id == R.id.action_settings || super.onOptionsItemSelected(item);
+        switch (id) {
+            case R.id.action_settings:
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
