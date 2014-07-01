@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/articleImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/featured_view_image_height"
+            android:alpha="0.8"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/articleHowTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/articleName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5px"
+
+            android:text="@string/how_to"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/card_text_color" />
+
+        <TextView
+            android:id="@+id/articleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/articleImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5px"
+
+            android:layout_marginLeft="5px"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            android:textColor="@color/card_text_color" />
+
+    </RelativeLayout>
+</FrameLayout>

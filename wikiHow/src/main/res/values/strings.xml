@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wikiHow</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="how_to">How to</string>
+    <string name="loading_featured_dialog">Loading Featured articles…</string>
+    <string name="wikihow_local_main_page">http://www.wikihow.com</string>
+
+</resources>
