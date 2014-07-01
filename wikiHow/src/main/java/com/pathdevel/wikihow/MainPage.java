@@ -2,6 +2,7 @@ package com.pathdevel.wikihow;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,6 +38,9 @@ public class MainPage extends Activity {
                 // just a quick-check
                 if (a != null) {
                     Toast.makeText(MainPage.this, a.url, Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Log.e("Error", "The ListView item in a Featured view is null");
                 }
             }
         });
